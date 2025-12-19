@@ -114,7 +114,7 @@ export default function StarDialog({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center">
       {/* Backdrop with blur */}
       <div
         className="absolute inset-0 bg-terminal-bg/90 backdrop-blur-md"

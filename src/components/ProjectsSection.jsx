@@ -286,7 +286,7 @@ export default function ProjectsSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-16 md:py-24 px-4 md:px-8 lg:px-16 overflow-hidden"
+      className="py-16 md:py-24 px-4 md:px-8 lg:px-16 overflow-hidden"
     >
       {/* Background effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/3 rounded-full blur-3xl" />
@@ -313,7 +313,7 @@ export default function ProjectsSection() {
       </div>
 
       {/* Projects Grid */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 z-10">
         {projects.map((project, index) => (
           <ProjectCard key={project.id} project={project} index={index} />
         ))}
